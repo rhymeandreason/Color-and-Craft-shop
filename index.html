@@ -6,7 +6,99 @@
   <title>Color &amp; Craft — Paper Plant Kits</title>
   <meta name="description" content="High quality paper plant kits with step-by-step video tutorials. No glue or scissors required.">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://colorandcraft.co">
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://colorandcraft.co">
+  <meta property="og:site_name" content="Color &amp; Craft">
+  <meta property="og:title" content="Color &amp; Craft — Paper Plant Kits">
+  <meta property="og:description" content="High quality DIY paper plant kits with step-by-step video tutorials. No glue or scissors required. Shop on Etsy.">
+  <meta property="og:image" content="https://colorandcraft.co/main_image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Color &amp; Craft — Paper Plant Kits">
+  <meta name="twitter:description" content="High quality DIY paper plant kits with step-by-step video tutorials. No glue or scissors required.">
+  <meta name="twitter:image" content="https://colorandcraft.co/main_image.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://use.typekit.net" crossorigin>
   <link rel="stylesheet" href="https://use.typekit.net/tiu0pue.css">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Color & Craft",
+        "url": "https://colorandcraft.co",
+        "logo": "https://colorandcraft.co/logotype.svg",
+        "sameAs": ["https://colorandcraftplants.etsy.com"]
+      },
+      {
+        "@type": "ItemList",
+        "name": "Paper Plant Kits",
+        "itemListElement": [
+          {
+            "@type": "ListItem", "position": 1,
+            "item": {
+              "@type": "Product",
+              "name": "Medallion Calathea DIY Paper Plant Kit",
+              "image": "https://colorandcraft.co/plants/CalatheaMedallion_main.png",
+              "offers": { "@type": "Offer", "price": "28", "priceCurrency": "USD", "url": "https://www.etsy.com/listing/4390282455/diy-paper-plant-kit-medallion-calathea" }
+            }
+          },
+          {
+            "@type": "ListItem", "position": 2,
+            "item": {
+              "@type": "Product",
+              "name": "Caladium New Wave DIY Paper Plant Kit",
+              "image": "https://colorandcraft.co/plants/NewWave_main.png",
+              "offers": { "@type": "Offer", "price": "28", "priceCurrency": "USD", "url": "https://www.etsy.com/listing/4390300388/diy-paper-plant-kit-caladium-new-wave" }
+            }
+          },
+          {
+            "@type": "ListItem", "position": 3,
+            "item": {
+              "@type": "Product",
+              "name": "Begonia Brevirimosa DIY Paper Plant Kit",
+              "image": "https://colorandcraft.co/plants/Brevirimosa_main.png",
+              "offers": { "@type": "Offer", "price": "28", "priceCurrency": "USD", "url": "https://www.etsy.com/listing/4390307185/diy-paper-plant-kit-begonia-brevirimosa" }
+            }
+          },
+          {
+            "@type": "ListItem", "position": 4,
+            "item": {
+              "@type": "Product",
+              "name": "Lemon-Lime Calathea DIY Paper Plant Kit",
+              "image": "https://colorandcraft.co/plants/LemonLime_main.png",
+              "offers": { "@type": "Offer", "price": "28", "priceCurrency": "USD", "url": "https://www.etsy.com/listing/4390285147/diy-paper-plant-kit-lemon-lime-calathea" }
+            }
+          },
+          {
+            "@type": "ListItem", "position": 5,
+            "item": {
+              "@type": "Product",
+              "name": "Maranta Calathea DIY Paper Plant Kit",
+              "image": "https://colorandcraft.co/plants/Maranta_main.png",
+              "offers": { "@type": "Offer", "price": "28", "priceCurrency": "USD", "url": "https://www.etsy.com/listing/4390290004/diy-paper-plant-kit-maranta-calathea" }
+            }
+          },
+          {
+            "@type": "ListItem", "position": 6,
+            "item": {
+              "@type": "Product",
+              "name": "Pink Polka Dot Begonia DIY Paper Plant Kit",
+              "image": "https://colorandcraft.co/plants/PolkaDot_main.png",
+              "offers": { "@type": "Offer", "price": "28", "priceCurrency": "USD", "url": "https://www.etsy.com/listing/4390289333/diy-paper-plant-kit-pink-variegated" }
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -50,7 +142,6 @@
       font-size: 0.75rem;
       font-weight: 800;
       text-transform: uppercase;
-      //letter-spacing: 0.1em;
       color: #111;
       text-decoration: none;
     }
@@ -89,7 +180,6 @@
       font-size: 0.75rem;
       font-weight: 700;
       text-transform: uppercase;
-      //letter-spacing: 0.18em;
       color: #999;
       margin-bottom: 0.85rem;
     }
@@ -263,7 +353,7 @@
 
   <!-- Hero -->
   <div class="hero">
-    <img src="main_image.jpg" alt="Paper plant kit with colorful paper leaves and crafting supplies on a purple background">
+    <img src="main_image.jpg" alt="Paper plant kit with colorful paper leaves and crafting supplies on a purple background" fetchpriority="high" loading="eager">
   </div>
 
   <!-- Value prop -->
@@ -280,37 +370,37 @@
   <section class="products-section">
     <div class="products">
       <a href="https://www.etsy.com/listing/4390282455/diy-paper-plant-kit-medallion-calathea" target="_blank" rel="noopener" class="product-card">
-        <img src="plants/CalatheaMedallion_main.png" alt="Medallion Calathea paper plant kit">
+        <img loading="lazy" src="plants/CalatheaMedallion_main.png" alt="Medallion Calathea paper plant kit">
         <span class="name">Medallion Calathea</span>
         <span class="level">Level 1</span>
         <span class="price">$28</span>
       </a>
       <a href="https://www.etsy.com/listing/4390300388/diy-paper-plant-kit-caladium-new-wave" target="_blank" rel="noopener" class="product-card">
-        <img src="plants/NewWave_main.png" alt="Caladium New Wave paper plant kit">
+        <img loading="lazy" src="plants/NewWave_main.png" alt="Caladium New Wave paper plant kit">
         <span class="name">Caladium New Wave</span>
         <span class="level">Level 1</span>
         <span class="price">$28</span>
       </a>
       <a href="https://www.etsy.com/listing/4390307185/diy-paper-plant-kit-begonia-brevirimosa" target="_blank" rel="noopener" class="product-card">
-        <img src="plants/Brevirimosa_main.png" alt="Begonia Brevirimosa paper plant kit">
+        <img loading="lazy" src="plants/Brevirimosa_main.png" alt="Begonia Brevirimosa paper plant kit">
         <span class="name">Begonia Brevirimosa</span>
         <span class="level">Level 2</span>
         <span class="price">$28</span>
       </a>
       <a href="https://www.etsy.com/listing/4390285147/diy-paper-plant-kit-lemon-lime-calathea" target="_blank" rel="noopener" class="product-card">
-        <img src="plants/LemonLime_main.png" alt="Lemon-Lime Calathea paper plant kit">
+        <img loading="lazy" src="plants/LemonLime_main.png" alt="Lemon-Lime Calathea paper plant kit">
         <span class="name">Lemon-Lime Calathea</span>
         <span class="level">Level 3</span>
         <span class="price">$28</span>
       </a>
       <a href="https://www.etsy.com/listing/4390290004/diy-paper-plant-kit-maranta-calathea" target="_blank" rel="noopener" class="product-card">
-        <img src="plants/Maranta_main.png" alt="Maranta Calathea paper plant kit">
+        <img loading="lazy" src="plants/Maranta_main.png" alt="Maranta Calathea paper plant kit">
         <span class="name">Maranta Calathea</span>
         <span class="level">Level 3</span>
         <span class="price">$28</span>
       </a>
       <a href="https://www.etsy.com/listing/4390289333/diy-paper-plant-kit-pink-variegated" target="_blank" rel="noopener" class="product-card">
-        <img src="plants/PolkaDot_main.png" alt="Pink Polka Dot Begonia paper plant kit">
+        <img loading="lazy" src="plants/PolkaDot_main.png" alt="Pink Polka Dot Begonia paper plant kit">
         <span class="name">Pink Polka Dot Begonia</span>
         <span class="level">Level 3</span>
         <span class="price">$28</span>
