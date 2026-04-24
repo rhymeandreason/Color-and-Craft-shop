@@ -180,7 +180,7 @@
       font-size: 0.75rem;
       font-weight: 700;
       text-transform: uppercase;
-      color: #999;
+      color: #555;
       margin-bottom: 0.85rem;
     }
 
@@ -229,6 +229,42 @@
       line-height: 1;
     }
 
+    /* ── Level legend ── */
+    .level-legend {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin-bottom: 2rem;
+      background: #f9f6ff;
+      border-radius: 14px;
+      overflow: hidden;
+    }
+
+    .level-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 0.3rem;
+      padding: 1.25rem 1rem;
+    }
+
+    .level-item + .level-item {
+      border-left: 1px solid #e8e0f5;
+    }
+
+    .level-badge {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #333;
+    }
+
+    .level-desc {
+      font-size: 0.85rem;
+      color: #777;
+      line-height: 1.4;
+    }
+
     /* ── Product grid ── */
     .products-section {
       padding: 0 1.5rem 2rem;
@@ -267,22 +303,22 @@
 
     .product-card .name {
       font-weight: 700;
-      font-size: 0.88rem;
+      font-size: 1rem;
       margin-top: 0.7rem;
-      margin-bottom: 0.2rem;
+      margin-bottom: 0.3rem;
     }
 
     .product-card .level {
-      font-size: 0.75rem;
+      font-size: 0.85rem;
       font-weight: 700;
       text-transform: uppercase;
-      color: #999;
-      margin-bottom: 0.2rem;
+      color: #555;
+      margin-bottom: 0.3rem;
     }
 
     .product-card .price {
-      font-size: 0.75rem;
-      font-weight: 600;
+      font-size: 0.85rem;
+      font-weight: 700;
     }
 
     /* ── Reviews ── */
@@ -414,6 +450,22 @@
 
   <!-- Product grid -->
   <section class="products-section">
+    <div class="level-legend">
+      <div class="level-item">
+        <span class="level-badge">Level 1</span>
+
+        <span class="level-desc">Simplest!<br>45 minutes to complete.</span>
+      </div>
+      <div class="level-item">
+        <span class="level-badge">Level 2</span>
+
+        <span class="level-desc">A little more detail.<br>~1 hour to complete.</span>
+      </div>
+      <div class="level-item">
+        <span class="level-badge">Level 3</span>
+        <span class="level-desc">More colors and stencils.<br>~1-1.5 hours to complete.</span>
+      </div>
+    </div>
     <div class="products">
       <a href="https://www.etsy.com/listing/4390282455/diy-paper-plant-kit-medallion-calathea" target="_blank" rel="noopener" class="product-card">
         <img loading="lazy" src="plants/CalatheaMedallion_main.png" alt="Medallion Calathea paper plant kit">
@@ -454,6 +506,11 @@
     </div>
   </section>
 
+  <!-- Feature text -->
+  <section class="feature-text">
+    <p>Kits come with everything you need.<br>No glue or scissors required!</p>
+  </section>
+
   <!-- Reviews -->
   <section class="reviews-section">
     <div class="reviews-grid">
@@ -473,11 +530,6 @@
         <div class="review-meta">Haley &middot; Nov 2025</div>
       </div>
     </div>
-  </section>
-
-  <!-- Feature text -->
-  <section class="feature-text">
-    <p>Kits come with everything you need.<br>No glue or scissors required!</p>
   </section>
 
   <!-- Video -->
