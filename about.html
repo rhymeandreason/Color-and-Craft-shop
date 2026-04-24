@@ -36,6 +36,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      flex-wrap: wrap;
       max-width: 900px;
       margin: 0 auto;
       padding: 1rem 1.5rem;
@@ -46,6 +47,30 @@
       width: auto;
       display: block;
     }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: #111;
+      border-radius: 2px;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    nav.nav-open .hamburger span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    nav.nav-open .hamburger span:nth-child(2) { opacity: 0; }
+    nav.nav-open .hamburger span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
     nav ul {
       list-style: none;
@@ -63,6 +88,26 @@
     }
 
     nav ul a:hover { text-decoration: underline; }
+
+    @media (max-width: 520px) {
+      .hamburger { display: flex; }
+
+      nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        padding: 0.25rem 0 0.75rem;
+      }
+
+      nav.nav-open ul { display: flex; }
+
+      nav ul a {
+        display: block;
+        padding: 0.6rem 0;
+        font-size: 0.9rem;
+      }
+    }
 
     /* ── About ── */
     .about {
@@ -136,8 +181,12 @@
       <a href="/" class="logo">
         <img src="logotype.svg" alt="Color &amp; Craft">
       </a>
+      <button class="hamburger" aria-label="Toggle menu" onclick="this.closest('nav').classList.toggle('nav-open')">
+        <span></span><span></span><span></span>
+      </button>
       <ul>
         <li><a href="https://make.colorandcraft.co">Tutorials</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="https://colorandcraftplants.etsy.com" target="_blank" rel="noopener">Shop</a></li>
       </ul>
     </nav>
