@@ -213,6 +213,12 @@
       width: 100%;
       display: block;
       border-radius: 16px;
+      aspect-ratio: 3 / 2;
+      object-fit: cover;
+    }
+
+    @media (min-width: 521px) {
+      .hero img { aspect-ratio: auto; }
     }
 
     /* ── Value prop ── */
