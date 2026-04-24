@@ -285,6 +285,52 @@
       font-weight: 600;
     }
 
+    /* ── Reviews ── */
+    .reviews-section {
+      padding: 3rem 1.5rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+    }
+
+    @media (min-width: 640px) {
+      .reviews-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    .review-card {
+      background: #f9f6ff;
+      border-radius: 14px;
+      padding: 1.25rem 1.25rem 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .review-stars {
+      color: #FFD600;
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+    }
+
+    .review-text {
+      font-size: 0.85rem;
+      line-height: 1.55;
+      color: #333;
+      flex: 1;
+    }
+
+    .review-meta {
+      font-size: 0.68rem;
+      font-weight: 700;
+      color: #999;
+      margin-top: 0.25rem;
+    }
+
     /* ── Feature text ── */
     .feature-text {
       text-align: center;
@@ -405,6 +451,27 @@
         <span class="level">Level 3</span>
         <span class="price">$28</span>
       </a>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="reviews-section">
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">These paper plant kits are so fun to put together. I wrapped pens around the stems so it can have both form and function. Video tutorial was very well done and easy to follow. Highly recommend!</p>
+        <div class="review-meta">dblgaco &middot; Mar 2026</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Clear instructions and turned out great</p>
+        <div class="review-meta">Claire &middot; Feb 2026</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">This was so fun to make and looks great in my front entrance! The video tutorial was very easy to follow. Overall, I will definitely be building more in the future!</p>
+        <div class="review-meta">Haley &middot; Nov 2025</div>
+      </div>
     </div>
   </section>
 
